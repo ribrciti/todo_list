@@ -1,0 +1,9 @@
+<ul>
+	<% @tasks.each do |task| %>
+		<li><%= task.description %></li>
+	<% end %>
+</ul>
+
+<% 5.times do %>
+	<h2><%= @chore %></h2>
+<% end %>
