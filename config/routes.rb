@@ -2,6 +2,8 @@ Rails.application.routes.draw do
  
    root 'tasks#index'
 
+   get 'tasks/:id' => 'tasks#show', constraints: {id: /\d+/}, as: 'task'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
