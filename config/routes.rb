@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # GET "action view" => "controller name # controller action"
   get 'index' => 'demos#index'
+  get 'welcome' => 'demos#welcome'
 
   # POST
   # PUT
